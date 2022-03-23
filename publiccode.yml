@@ -1,0 +1,56 @@
+# This repository adheres to the publiccode.yml standard by including this 
+# metadata file that makes public software easily discoverable.
+# More info at https://github.com/italia/publiccode.yml
+
+publiccodeYmlVersion: '0.2'
+categories:
+  - content-management
+description:
+  en:
+    features:
+      - Moving files and folders between google drives
+    genericName: groot
+    localisedName: Groot
+    longDescription: |
+      A simple solution written in Python to move files between Google drive folders and mantain sharing properties and IDS of the original files. It works even between
+      different domains. An authentication json file is needed for the origin folder editor user (you can obtain the authentication json file by1 following the instructions at
+      https://developers.google.com/workspace/guides/create-credentials), the destination folder must be shared with the origin folder user as editor. Multiple istances
+      of the script can be used on different subfolders within the origin folder as long as different  destination subfolders exist in the destination folder.
+      Usage is as very simple: python groot.py origin_folder_id destination_folder_id
+      The json credential file must be renamed to credentials.json and put in the same folder where you put the script.
+    shortDescription: |
+     An easy Python tool to move files and folders between Google drive folders
+developmentStatus: stable
+it:
+  conforme:
+    gdpr: false
+    lineeGuidaDesign: false
+    misureMinimeSicurezza: false
+    modelloInteroperabilita: false
+  countryExtensionVersion: '0.2'
+  piattaforme:
+    anpr: false
+    cie: false
+    pagopa: false
+    spid: false
+  riuso:
+    codiceIPA: arpa
+legal:
+  license: AGPL-3.0-or-later
+localisation:
+  availableLanguages:
+    - en
+  localisationReady: false
+maintenance:
+  contacts:
+    - name: Tomaso Tonelli
+  type: community
+name: groot
+platforms:
+  - linux
+  - windows
+  - mac
+releaseDate: '2022-03-23'
+softwareType: standalone/script
+softwareVersion: stable
+url: 'https://github.com/Arpae-it/groot'
