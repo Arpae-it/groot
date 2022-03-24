@@ -51,6 +51,6 @@ platforms:
   - windows
   - mac
 releaseDate: '2022-03-23'
-softwareType: standalone/script
+softwareType: standalone/desktop
 softwareVersion: stable
 url: 'https://github.com/Arpae-it/groot'
